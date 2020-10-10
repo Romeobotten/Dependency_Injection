@@ -1,12 +1,15 @@
 package se.lexicon.romeobot.data_access;
 
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Controller;
 import se.lexicon.romeobot.models.Student;
 import se.lexicon.romeobot.sequencer.idSequencer;
 
 import java.util.ArrayList;
 import java.util.List;
 
-// @Component ("StudentDao")
+@Controller("StudentDao")
+@ComponentScan("StudentDao") //("StudentDao")
 public class StudentDaoListImpl implements StudentDao {
 
     private List<Student> students = new ArrayList<>();
