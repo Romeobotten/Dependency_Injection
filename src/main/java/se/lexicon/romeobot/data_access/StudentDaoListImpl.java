@@ -8,8 +8,8 @@ import se.lexicon.romeobot.sequencer.idSequencer;
 import java.util.ArrayList;
 import java.util.List;
 
-@Controller("StudentDao")
-@ComponentScan("StudentDao") //("StudentDao")
+@Controller  //("StudentDao")
+@ComponentScan("StudentDao")
 public class StudentDaoListImpl implements StudentDao {
 
     private List<Student> students = new ArrayList<>();

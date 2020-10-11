@@ -9,7 +9,9 @@ import java.util.Scanner;
 @Configuration
 
 @ComponentScan({
-"se.lexicon.data_access"
+        "se.lexicon.romeobot.data_access",
+        "se.lexicon.romeobot.util",
+        "se.lexicon.romeobot.service"
 })
 
 public class ComponentScanConfig {
